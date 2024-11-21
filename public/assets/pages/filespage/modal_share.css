@@ -39,6 +39,10 @@
     text-shadow: 0px 0px 1px var(--color);
     background: var(--bg-color);
     background-position: center;
+    line-height: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .dark-mode .component_share .share--content.link-type > div {
     background: var(--color);
@@ -86,10 +90,8 @@
     font-size: 0.9em;
     flex-grow: 2;
     width: 100%;
-    white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
-    text-overflow: ellipsis;
 }
 .component_share .share--content.existing-links .link-details .link-details--icons {
     display: flex;
@@ -163,9 +165,6 @@
 .component_supercheckbox > label {
     font-size: 0.95em;
     font-style: italic;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .component_supercheckbox > label .label {
     margin-left: -5px;

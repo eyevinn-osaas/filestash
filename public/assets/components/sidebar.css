@@ -16,20 +16,25 @@
 .component_filemanager_shell .component_sidebar > div { direction: ltr; }
 .component_filemanager_shell .component_sidebar h3 {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 20px;
     color: var(--light);
     font-size: 0.9rem;
     opacity: 0.8;
     padding-left: 15px;
     text-transform: capitalize;
 }
+body.touch-no .component_filemanager_shell .component_sidebar h3 img:hover {
+    filter: drop-shadow(0px 0px 4px #e2e2e2);
+}
 .component_filemanager_shell .component_sidebar h3 img {
     padding-right: 4px;
     cursor: pointer;
+    width: 16px;
 }
 .component_filemanager_shell .component_sidebar h3 input::placeholder {
     text-transform: capitalize;
-    color: var(--color);
+    color: var(--light);
 }
 .component_filemanager_shell .component_sidebar h3 input {
     border: none;
@@ -38,7 +43,8 @@
     font-size: inherit;
     background: inherit;
 }
-.component_filemanager_shell .component_sidebar [data-bind="your-files"] > ul { margin-left: 0px; }
+.component_filemanager_shell .component_sidebar [data-bind="your-files"] { margin-bottom: 30px; }
+.component_filemanager_shell .component_sidebar [data-bind] > ul { margin-left: 0px; }
 .component_filemanager_shell .component_sidebar ul {
     margin-top: 0px;
     padding: 0;
@@ -83,8 +89,6 @@
     opacity: 0.85;
 }
 .component_filemanager_shell .component_sidebar a > div {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     padding-left: 2px;
+    text-transform: capitalize;
 }
